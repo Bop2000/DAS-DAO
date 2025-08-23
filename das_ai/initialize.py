@@ -55,7 +55,7 @@ def design_space(
         't2': np.arange(30, 46, 1).round(0), # Inoculation time (min)
         't3': np.arange(380, 501, 10).round(0), # Pouring time (″)
         
-        # Miscrostructures: only graphite fraction is designable
+        # Miscrostructures: only pearlite fraction is designable
         'pearlite fraction': np.round(np.arange(5, 100, 5)), # (%)
         
         # Other chemical compositions in unit at%
