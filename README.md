@@ -113,14 +113,14 @@ param_space, design_params = design_space()
 """Multi-modal dataset"""
 X_input, y1, y2, coef_fit, scaler_x, scaler_y1, scaler_y2 = load_data(
     param_space,
-    file_name='data_multi-modal',
+    file_name='CPM-P_dataset',
     )
 
 """Composition dataset"""
 columns_c = ['C','Si','Mn','Cu','P','S','Cr','Sn','Mg','Sb','Ti']
 X_input_c, y1_c, y2_c, coef_fit_c, scaler_x_c, scaler_y1_c, scaler_y2_c = load_data(
     {i:param_space[i] for i in columns_c},
-    file_name='data_composition',
+    file_name='C-P_dataset',
     )
 
 ######################## Surrogate model training ############################
