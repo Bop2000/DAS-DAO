@@ -1,8 +1,8 @@
-# DAS-AI
-Sustainable alloy design with multi-modal artificial intelligence
+# DAS-DAO
+Designing alloy from 100% scrap with deep active optimization
 
 ## Pseudocode
-We present a high-level description of the DAS-AI designed to find the global maximum of an objective function $x^* =$ argmax $f(x)$, $x ∈ X$, where $x$ is the input vector and $X \subseteq \mathbb{R}^N$ is the search space of dimension $N$. The algorithm begins by randomly sampling a dataset $D = \{(x_i, y_i)\}_{i=1}^n \$, where $y_i = f(x_i)$. This dataset is then used to train a data-driven surrogate model $m = \mathbf{Model}(D)$ to fit the distribution of the dataset $D$.
+We present a high-level description of the DAS-DAO designed to find the global maximum of an objective function $x^* =$ argmax $f(x)$, $x ∈ X$, where $x$ is the input vector and $X \subseteq \mathbb{R}^N$ is the search space of dimension $N$. The algorithm begins by randomly sampling a dataset $D = \{(x_i, y_i)\}_{i=1}^n \$, where $y_i = f(x_i)$. This dataset is then used to train a data-driven surrogate model $m = \mathbf{Model}(D)$ to fit the distribution of the dataset $D$.
 
 <p align="center">
   <img src="assets/pseudocode.png" alt="Pseudocode" width="600">
@@ -10,7 +10,7 @@ We present a high-level description of the DAS-AI designed to find the global ma
 
 # System Requirements
 ## Hardware requirements
-`DAS-AI` package requires only a standard computer with enough RAM to support the in-memory operations.
+`DAS-DAO` package requires only a standard computer with enough RAM to support the in-memory operations.
 
 ## Software requirements
 ### OS Requirements
@@ -19,7 +19,7 @@ This package is supported for *Linux* and *Windows*. The package has been tested
 + Windows: Windows 10
 
 ### Python Dependencies
-`DAS-AI` mainly depends on the Python scientific stack.
+`DAS-DAO` mainly depends on the Python scientific stack.
 
 ```
 dependencies = [
@@ -38,35 +38,35 @@ dependencies = [
 
 ## Installation
 
-`DAS-AI` requires `python>=3.8`. Installation of TensorFlow and Keras with CUDA support is strongly recommended. It typically takes a few minutes to finish the installation on a `normal` desktop computer.
+`DAS-DAO` requires `python>=3.8`. Installation of TensorFlow and Keras with CUDA support is strongly recommended. It typically takes a few minutes to finish the installation on a `normal` desktop computer.
 
-To install DAS-AI, run:
+To install DAS-DAO, run:
 
 ```bash
-pip install git+https://github.com/Bop2000/DAS-AI.git
+pip install git+https://github.com/Bop2000/DAS-DAO.git
 ```
 
 Alternatively, you can clone the repository and install it locally:
 
 ```bash
-git clone https://github.com/Bop2000/DAS-AI
-cd DAS-AI
+git clone https://github.com/Bop2000/DAS-DAO
+cd DAS-DAO
 pip install -e .
 ```
 
 ## Running Tests
 
-To run tests for DAS-AI, execute the following command in the project root directory:
+To run tests for DAS-DAO, execute the following command in the project root directory:
 
 ```bash
 python -m pytest -m "not slow"
 ```
 
 
-## DAS-AI optimization
+## DAS-DAO optimization
 
 The demo notebook with code execution history can be found in folder `notebook`.
-Here's a detailed example of how to use DAS-AI, before you execute the following code, `please download the Excel file in "data" folder`:
+Here's a detailed example of how to use DAS-DAO, before you execute the following code, `please download the Excel file in "data" folder`:
 
 ```python
 import numpy as np
