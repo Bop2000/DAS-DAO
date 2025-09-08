@@ -77,12 +77,12 @@ import matplotlib.pyplot as plt
 import random
 from sklearn.preprocessing import StandardScaler
 
-from das_ai.initialize import create_folders,load_data,design_space
-from das_ai.neural_surrogate import TensileSurrogateModel
-from das_ai.objective_func import obj_function
-from das_ai.tree_exploration import TreeExploration
-from das_ai.pareto_front import pareto_frontier,pareto_evaluation,pareto_score
-from das_ai.save_file import save_excel
+from das_dao.initialize import create_folders,load_data,design_space
+from das_dao.neural_surrogate import TensileSurrogateModel
+from das_dao.objective_func import obj_function
+from das_dao.tree_exploration import TreeExploration
+from das_dao.pareto_front import pareto_frontier,pareto_evaluation,pareto_score
+from das_dao.save_file import save_excel
 
 ############################### Initialization ###############################
 opt_round = 1 # optimization round
