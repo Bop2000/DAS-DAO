@@ -105,7 +105,7 @@ def design_space(
         
 def load_data(
         param_space,
-        file_name='data_multi-modal',
+        file_name='CPM-P_dataset',
         ):
     df = pd.read_excel(f'data/{file_name}.xlsx')
     columns = [key for key, value in param_space.items()]
