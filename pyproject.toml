@@ -3,9 +3,9 @@ requires = ["setuptools>=75.1.0", "wheel>=0.44.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "das_ai"
+name = "das_dao"
 version = "0.1.0"
-description = "DAS-AI: Designing alloy from 100% scrap with multi-modal AI"
+description = "DAS-DAO: Designing alloy from 100% scrap with deep active optimization"
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
@@ -42,10 +42,10 @@ dev = [
     "jupyter>=1.0.0",
 ]
 [project.urls]
-"Homepage" = "https://github.com/Bop2000/DAS-AI"
+"Homepage" = "https://github.com/Bop2000/DAS-DAO"
 
 [tool.setuptools]
-packages = ["das_ai"]
+packages = ["das_dao"]
 
 [tool.setuptools.package-data]
-das_ai = ["LICENSE", "README.md"]
+das_dao = ["LICENSE", "README.md"]
