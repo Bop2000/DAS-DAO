@@ -68,8 +68,8 @@ class SurrogateModel(ABC):
     target: str = 'UTS'
     verbose: bool = False
     
-    x_scaler: Optional[StandardScaler] = StandardScaler()
-    y_scaler: Optional[StandardScaler] = StandardScaler()
+    x_scaler: Optional[StandardScaler] = field(default_factory=StandardScaler)
+    y_scaler: Optional[StandardScaler] = field(default_factory=StandardScaler)
     
 
     @abstractmethod
